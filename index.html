@@ -7,18 +7,22 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <!-- Bootstrap CSS -->
+
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+  />
+ 
     <link rel="shortcut icon" href="images/logogota.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/estilos.css" />
-     <link rel="stylesheet" href="css/estilos.css">
+     <link rel="stylesheet" href="css/estilos.css">`
+
     <!--Envío de Newsletter-->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <title>Blood Plus</title>
   </head>
 
@@ -116,6 +120,7 @@
                 src="Images/ManosConCorazon.jpg"
                 alt="imagen de portada"
                 width="100%"
+              
               />
             </div>
             <div class="overlay">
@@ -239,67 +244,136 @@
          <div class="row no-gutters">
            <div class="col-md-6">
              <img src="images/soydonante.jpg" 
-             class="card-img" 
-            
-             
+             class="card-img"           
              alt="...">
            </div>
            <div class="col-md-6">
              <div class="card-body">
                <h5 class="card-title"> SITIOS EN TUCUMÁN:</h5>
-               <p class="card-text">
-                
-                <h6><strong>San Miguel de Tucumán</strong> </h6>
-                <ul>
-                  <li> Banco Central de Sangre</li>
-                  <p> Domicilio: Av. Mitre 236
-                   Teléfono-fax: 0381-431 1841
-                   Horario de atención: 
-                   Todos los días de 7 a 13 hs., tambien por la tarde de 15.30a 19.30 (excepto los martes)
-                    y los sábados de 8.30.a 12.</p>
-                   
-                   <li>Instituto de Maternidad Nuestra Sra. De las Mercedes</li>
-                   <p> Dirección: Av. Mate de Luna 1535
-                    Teléfono: 0381-423 0208
-                   Horario de atención: de 7.30 a 11.30hs.</p>
- 
-                 <h6><strong>Alberdi</strong></h6>  
-                  <li>Hospital Juan B. Alberdi</li>
-                  <p>Domicilio: Belgrano 851
-                 Teléfono: 03865-471023
-                 Horario de atención: 7.30 a 11.30 hs.</p>
- 
-                 <h6><strong> Concepción</strong></h6>
-                  <li>Hospital Regional de Concepción</li>
-                   <p>Domicilio: San Luís 150
-                 Teléfono: 03865-421784
-                 Horario de atención: 7.30 a 11.30 hs.</p>
-                
-                 
-                <h6><strong>Aguilares </strong></h6>
-                  <li>Hospital De Aguilares </li>
-                   <p> Domicilio: J. B. Alberdi s/n
-                 Teléfono: 03865-481343
-                 Horario de atención: 7.30 a 11.30 hs.</p>
- 
-                 <h6><strong>Bella Vista</strong></h6>
-                 <li>Hospital Bella Vista</li>
+               <div id="accordion">
+
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <strong>San Miguel de Tucumán</strong>
+                      </button>
+                    </h5>
+                  </div>            
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      <strong>Banco Central de Sangre</strong> 
+                      <p> Domicilio: Av. Mitre 236
+                       Teléfono-fax: 0381-431 1841
+                       Horario de atención: 
+                       Todos los días de 7 a 13 hs., tambien por la tarde de 15.30a 19.30 (excepto los martes)
+                        y los sábados de 8.30.a 12.</p>
+                       
+                        <strong> Instituto de Maternidad Nuestra Sra. De las Mercedes</strong> 
+                       <p> Dirección: Av. Mate de Luna 1535
+                        Teléfono: 0381-423 0208
+                       Horario de atención: de 7.30 a 11.30hs.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <strong>Alberdi</strong>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      <strong>Hospital Juan B. Alberdi</strong>
+                      <p>Domicilio: Belgrano 851
+                       Teléfono: 03865-471023
+                       Horario de atención: 7.30 a 11.30 hs.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <strong> Concepción</strong>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      <strong>Hospital Regional de Concepción</strong>
+                      <p>Domicilio: San Luís 150
+                    Teléfono: 03865-421784
+                    Horario de atención: 7.30 a 11.30 hs.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <strong>Aguilares</strong>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                      <strong>Hospital De Aguilares </strong>
+                      <p> Domicilio: J. B. Alberdi s/n
+                    Teléfono: 03865-481343
+                    Horario de atención: 7.30 a 11.30 hs.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <strong>Bella Vista</strong>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                      <strong>Hospital Bella Vista</strong>
                   <p>Domicilio: Calle s/nombre s/n
                  Teléfono: 0381-4820198
                  Horario de atención: 7.30 a 11.30 hs.</p>
- 
-                 <h6><strong>Monteros</strong></h6>
-                 <li> Hospital General La Madrid</li>
-                  <p>Domicilio: Sarmiento 453
-                 Telefono: 03863-426 229
-                 Horario de atención: 7.30 a 11.30hs.</p>
- 
-                </ul>
-             
-               </p>
-               
-               <a href="https://www.argentina.gob.ar/salud/donarsangre/donde" id="" class="btn"><strong>Ver sitios donde donar en el país</strong></a>
-             
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <strong>Monteros</strong>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div class="card-body">
+                      <strong> Hospital General La Madrid</strong>
+                      <p>Domicilio: Sarmiento 453
+                     Telefono: 03863-426 229
+                     Horario de atención: 7.30 a 11.30hs.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+   
+               <div class="col-md-8 mt-4">
+                 <a href="https://www.argentina.gob.ar/salud/donarsangre/donde" 
+                 id="" class="btn"><strong>Ver sitios donde donar en el país</strong></a>
+             </div>
              </div>
            </div>
          </div>
@@ -378,7 +452,7 @@
 
     <!-- Fin Newsletter-->
  <!-----Sección Avisos---->
- <div class="ifix-title-wrapper text-center ">
+ <div class="ifix-title-wrapper text-center mt-5 mb-4">
   <h1 class="text-center " >AVISOS!</h1>
     <!-- TARJETAS  AVISOS -->
 
@@ -397,17 +471,18 @@
                   <div class="card-header border-dark text-center text-uppercase"> <img src="https://img.icons8.com/dotty/80/000000/group-task.png"/> Campañas </div>
                   <div class="card-body">
                     <h5 class="card-title text-center">Campaña de Donación de Sangre Salva Vidas vos También!</h5>
-                    <p class="card-text"> <b> ¡Sumate!</b> Participa vos tambien de nuestras campañas de Donación de Sangre Voluntaria. Cumplimos con todas las estrictas medidas de Bioseguridad y distanciamiento social.  </p>
+                    <p class="card-text">  <p> Cumplimos con todas las estrictas medidas de Bioseguridad y distanciamiento social.</p><a href="#">#SumateDonaSangre</a> 
                   </div>
                 </div>
             </div>
                 <div class="col-12 col-md-4 col-lg-4">
                   <div class="card border-dark bg-light mb-3 ">
                     <div class="card-header border-dark text-center text-uppercase"><img src="https://img.icons8.com/color/80/000000/drop-of-blood.png"/>    Solidaridad </div>
+                  
                     <div class="card-body">
                       <h5 class="card-title text-center">Se Solicitan Dadores Grupo:"A" Factor:"RH (+)"</h5>
                       <p class="card-text"> <b> Hospital Avellaneda.
-                        Catamarca 2000, San Miguel de Tucumán, Tucumán.</b> JUEVES 5/10 DE 9 a 13 hs. Se cumplen con todas las estrictas medidas de Bioseguridad y distanciamiento social. <a href="#">#SumateDonaSangre</a> 
+                        Catamarca 2000, San Miguel de Tucumán, Tucumán.</b> <p>JUEVES 5/10 DE 9 a 13 hs.</p> <a href="#">#SumateDonaSangre</a> 
                       </p>
                       
                     </div>
@@ -418,7 +493,7 @@
                     <div class="card-header border-dark  text-center text-uppercase"> <img src="https://img.icons8.com/color/80/000000/drop-of-blood.png"/>Solidaridad</div>
                     <div class="card-body">
                       <h5 class="card-title text-center">Se Solicitan Dadores Grupo:"O" Factor: "RH(-)" </h5>
-                      <p class="card-text"> <b>Hospital Ángel C. Padilla. Juan B. Alberdi 550, San Miguel de Tucumán, Tucumán.</b>  JUEVES 5/10 DE 9 a 13 hs. Se cumplen con todas las estrictas medidas de Bioseguridad y distanciamiento social. <a href="#">#SumateDonaSangre</a> </p>
+                      <p class="card-text"> <b>Hospital Ángel C. Padilla. Alberdi 550, San Miguel de Tucumán, Tucumán.</b> <p>JUEVES 5/10 DE 9 a 13 hs.</p><a href="#">#SumateDonaSangre</a>  </p>
                     </div>
                 </div>
               </div>
@@ -431,7 +506,7 @@
   
   <!-- FIN DE LAS TARJETAS -->
   <!-----FOOTER------>
-  <footer class="container-fluid text-center footer-style">
+  <footer class="container-fluid text-center footer-style mt-4">
     <div class="container">
       <div class="row">
         <div class="col-md-4 footer-col">
@@ -487,7 +562,7 @@
   <!-- FIN DEL FOOTER -->
 
   
-    <!-- Modal -->
+    <!-- Modal Login -->
 <div class="modal fade" id="Login" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -501,14 +576,14 @@
         <form>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label"
-              >Nombre</label
+              >Usuario</label
             >
             <input type="text" class="form-control" id="name" />
           </div>
           
           <div class="form-group">
             <label for="recipient-name" class="col-form-label"
-              >Apellido</label
+              >Contraseña</label
             >
             <input type="password" class="form-control" id="password" />
               </div>
@@ -525,7 +600,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="/js/admin.js"></script>
+   
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -542,8 +617,9 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="/js/admin.js"></script>
     <script src="irarriba.js"></script>
-    <script src="letter.js"></script>
-    <script src="app.js"></script>
+    <script src="/js/letter.js"></script>
+    <script src="/js/app.js"></script>
   </body>
 </html>
